@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Remove Silence from Video</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #progress {
+      margin-top: 10px;
+    }
+    #download-link {
+      display: none;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Remove Silence from Video</h1>
+  <input type="file" id="video-input" accept="video/*">
+  <button id="process-button">Process Video</button>
+  <div id="progress"></div>
+  <a id="download-link" href="#" download="processed_video.mp4">Download Processed Video</a>
+
+  <!-- Include FFmpeg.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.10/dist/ffmpeg.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
